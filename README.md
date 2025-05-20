@@ -27,7 +27,21 @@ This research addresses the challenge of implementing a cost-effective feedback 
 - **Feedback Infrastructure**:
   - Gradio interface for user interactions
   - Firebase Realtime Database for feedback collection
-  - Automated DPO training loop
+  - DPO training loop
+
+
+## Model Comparison
+
+| Model               | Parameters | Fine-Tuning Method               | Suitability for Task             |
+|---------------------|------------|-----------------------------------|----------------------------------|
+| Llama-3.2-1B-Instruct | 1.24B      | LoRA, for causal language modeling | High (instruction-following)     |
+| Llama-2-7b-chat-hf  | 6.74B      | LoRA, for chat applications       | Moderate (resource-heavy)        |
+| Flan-T5-small       | 80M        | LoRA, for sequence-to-sequence tasks | Low (limited capacity)          |
+| Flan-T5-large       | 780M       | Full/LoRA, fully fine-tuned       | High (multilingual)              |
+| BERT-base-uncased   | 110M       | Full, for classification/embedding | Low (not generative)            |
+| DialoGPT            | 355M       | Full/LoRA, conversational tasks   | Moderate (conversational)        |
+| MT5-Large           | 1.2B       | Full, fully fine-tuned            | High (multilingual)              |
+
 
 ### Model Training Details
 | Parameter                | Value                     |
@@ -60,7 +74,7 @@ Training Step	Loss Value
 ...	...
 8000	0.1225
 
-**DPO training showed stable convergence with final loss values around 2.7-2.8.**
+**DPO training showed stable convergence for the 117 feedback comparison dataset with final loss values around 2.7**
 
 **Repository Structure**
 
