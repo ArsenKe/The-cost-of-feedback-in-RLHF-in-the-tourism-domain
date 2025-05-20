@@ -2,6 +2,13 @@
 
 This repository contains the implementation and research artifacts for my Master's thesis on developing a cost-effective Reinforcement Learning from Human Feedback (RLHF) system for tourism chatbots.
 
+**Deployed on Hugging Face Space** 
+  - https://huggingface.co/spaces/ArsenKe/rlhf-feedback-app
+  
+**Model pushed to Hugging Face Model**
+  Finetuned Model- https://huggingface.co/ArsenKe/MT5_large_finetuned_chatbot
+  DPO Reward adapters and tokenizers - https://huggingface.co/ArsenKe/MT5_large_dpo_merged
+  
 ## Abstract
 This research addresses the challenge of implementing a cost-effective feedback application for customer service chatbots using RLHF. The study explores strategies to build an RLHF chatbot assistant that relies on human feedback while minimizing implementation costs, specifically tailored for the tourism domain. Using Design Science Research (DSR), the project implements and evaluates various cost-reduction techniques including 8-bit quantization, DPO fine-tuning, and LoRA adaptation.
 
