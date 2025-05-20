@@ -1,0 +1,34 @@
+# DPO training container
+
+# firebase-admin==6.8.0
+# google-cloud-firestore
+# google-cloud-aiplatform==1.91.0
+# transformers==4.46.0
+# scipy
+# trl==0.16.1
+# datasets==3.5.0
+# accelerate==1.6.0
+# #bitsandbytes==0.41.1
+# peft==0.3.0
+# torch==2.4.0+cu124  # CUDA 12.4
+# huggingface-hub
+# torchvision
+# torchaudio
+# --extra-index-url https://download.pytorch.org/whl/cu124
+# #functions-framework==3.* 
+# bitsandbytes==0.39.0.post2
+
+firebase-admin==6.8.0
+google-cloud-firestore
+google-cloud-aiplatform==1.91.0
+transformers==4.46.0
+scipy
+trl==0.16.1
+datasets==3.5.0
+accelerate==1.6.0
+bitsandbytes==0.41.1
+peft==0.3.0
+torch==2.4.0+cu124
+huggingface-hub
+torchvision
+torchaudio

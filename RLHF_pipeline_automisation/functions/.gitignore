@@ -1,0 +1,11 @@
+# Python bytecode
+__pycache__/
+
+# Python virtual environment
+venv/
+*.local
+.env
+.runtimeconfig.json
+debug.log
+env.yaml
+serviceAccountKey.json

@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "RLHF_pipeline"
+location: "europe-west1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "rlhf_pipeline-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

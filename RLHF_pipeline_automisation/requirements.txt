@@ -1,0 +1,11 @@
+firebase-admin
+google-cloud-aiplatform
+google-cloud-pubsub
+#transformers==4.46.0
+#trl==0.16.1
+#datasets==3.5.0
+#accelerate==1.6.0
+#bitsandbytes==0.39.0
+#peft==0.3.0
+#torch==2.6.0+cu124
+
