@@ -6,7 +6,8 @@ This repository contains the implementation and research artifacts for my Master
   - https://huggingface.co/spaces/ArsenKe/rlhf-feedback-app
   
 **Model pushed to Hugging Face Model**
-  Finetuned Model- https://huggingface.co/ArsenKe/MT5_large_finetuned_chatbot
+  Finetuned Model - https://huggingface.co/ArsenKe/MT5_large_finetuned_chatbot
+  
   DPO Reward adapters and tokenizers - https://huggingface.co/ArsenKe/MT5_large_dpo_merged
   
 ## Abstract
