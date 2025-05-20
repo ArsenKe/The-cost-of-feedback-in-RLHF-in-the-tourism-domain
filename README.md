@@ -44,30 +44,13 @@ This research addresses the challenge of implementing a cost-effective feedback 
 ## Implementation
 
 ### Core Components
-1. **Feedback Collection System**
+ **Feedback Collection System**
    - Gradio web interface
    - Firebase Realtime Database integration
    - Quality rating mechanism
 
-2. **DPO Training Pipeline**
-   ```python
-   # Key components of DPO implementation
-   dpo_args = DPOConfig(
-       output_dir="./dpo_results",
-       per_device_train_batch_size=1,
-       gradient_accumulation_steps=4,
-       num_train_epochs=6,
-       learning_rate=1e-6,
-       beta=0.001
-   )
-   
-   trainer = DPOTrainer(
-       model=model,
-       ref_model=ref_model,
-       args=dpo_args,
-       train_dataset=tokenized_dataset
-   )
-3.**Results**
+
+### Results
 
 The MT5-Large model achieved consistent training loss reduction:
 
@@ -80,10 +63,15 @@ Training Step	Loss Value
 **DPO training showed stable convergence with final loss values around 2.7-2.8.**
 
 **Repository Structure**
+
 ├── LLM_finetuning_colab/          # Model training notebooks
+
 ├── RLHF_feedback_on_HuggingFaceSpace/  # Feedback interface
+
 ├── RLHF_pipeline_automisation/    # Automated training pipeline
+
 ├── README.md                      
+
 
 **Requirements**
 Python 3.9+
