@@ -8,7 +8,7 @@ This research addresses the challenge of implementing a cost-effective feedback 
 ## Key Contributions
 - Development of a robust data collection strategy for human feedback
 - Implementation of memory-efficient training techniques (8-bit quantization, gradient checkpointing)
-- Comparative analysis of different model architectures (MT5-Large, Llama variants)
+- Different model architectures application for dataset  (MT5-Large, Llama .etc)
 - Design of an effective reward mechanism using Direct Preference Optimization (DPO)
 - End-to-end RLHF pipeline with Firebase integration for real-time feedback
 
@@ -73,7 +73,8 @@ Training Step	Loss Value
 ├── README.md                      
 
 
-**Requirements**
+### Requirements
+
 Python 3.9+
 
 PyTorch 2.0+
